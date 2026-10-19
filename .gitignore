@@ -1,0 +1,7 @@
+node_modules/
+.onequeue/
+test-results/
+.env
+.env.*
+*.sqlite*
+mcp-client.local.json

@@ -1,0 +1,27 @@
+{
+  "projects": [
+    {
+      "id": "onequeue",
+      "name": "원큐 MCP",
+      "root": ".",
+      "sources": [
+        "package.json",
+        "package-lock.json",
+        "src",
+        "tests",
+        "scripts"
+      ],
+      "checks": {
+        "test": {
+          "args": [
+            "--test",
+            "--test-concurrency=1",
+            "tests/*.test.mjs"
+          ],
+          "timeoutMs": 120000
+        }
+      },
+      "browserChannel": "msedge"
+    }
+  ]
+}
